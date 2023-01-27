@@ -15,6 +15,8 @@ import SplashAnimation from "./Components/SplashAnimation";
 import NameVertical from "./Components/NameVertical";
 
 function App() {
+  document.title=config.name
+  console.log(window)
   const scrollDirection = useScrollDirection();
   return (
     <div className="app">
