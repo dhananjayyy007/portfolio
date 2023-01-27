@@ -12,12 +12,14 @@ import ContactMe from "./Components/ContactMe";
 import { Link } from "react-scroll";
 import Footer from "./Components/Footer";
 import SplashAnimation from "./Components/SplashAnimation";
+import NameVertical from "./Components/NameVertical";
 
 function App() {
   const scrollDirection = useScrollDirection();
   return (
     <div className="app">
       <SplashAnimation/>
+      <NameVertical/>
       <div class={`top-row ${scrollDirection === "down" ? "hide" : "show"}`}>
         <div class="logo_main">
           <img src={logo} alt="logo" className="logo_main_img" />
